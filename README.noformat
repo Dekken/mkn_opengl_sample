@@ -1,0 +1,9 @@
+
+
+Linux gcc/clang:
+	mkn build -dtSa -fPIC -l -pthread
+	mkn run
+
+Windows cl:
+	mkn build -dtS
+	mkn run

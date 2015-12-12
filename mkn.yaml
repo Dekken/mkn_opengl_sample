@@ -2,10 +2,10 @@
 
 name: mkn_opengl_sample
 version: master
-properties:
+property:
     git: http://github.com/mkn
 
-dependencies:
+dep:
   - name: gl.glew
     version: master
     scm: ${git}/gl.glew.git

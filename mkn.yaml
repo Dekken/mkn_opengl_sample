@@ -2,15 +2,11 @@
 
 name: mkn_opengl_sample
 version: master
-property:
-    git: http://github.com/mkn
 
 dep:
   - name: gl.glew
     version: master
-    scm: ${git}/gl.glew.git
   - name: gl.glfw
     version: master
-    scm: ${git}/gl.glfw.git
 
 main: main.c

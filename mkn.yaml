@@ -1,12 +1,21 @@
 
 
 name: mkn_opengl_sample
-version: master
 
-dep:
-  - name: gl.glew
-    version: master
-  - name: gl.glfw
-    version: master
+parent: common
+main: main.a.c
 
-main: main.c
+profile:
+  - name: common
+    dep:
+      - name: gl.glew
+        version: master
+      - name: gl.glfw
+        version: master
+    if_arg:
+        shared: -DGLFW_DLL
+        static: -DGLEW_STATIC
+
+  - name: b
+    parent: common
+    main: main.b.c
